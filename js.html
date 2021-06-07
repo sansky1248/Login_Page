@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            margin: auto;
+            padding: 10px;
+        }
+        .heading{ text-align: center;}
+        .form{text-align: center;}
+        label{ text-align: left;}
+        #btn{ padding: 10px; margin: 10px; width: 20%; height: 30px;}
+    </style>
+</head>
+<body>
+    <h1 class="heading">Welcome to Login Page</h1>
+    <div class="form">
+        <label class="">Username</label><br>
+        <input type="text" name="text" id="username"><br>
+        <label>Password</label><br>
+        <input type="password" name="password" id="password"><br>
+        <input type="button" value="Button" id="btn" onclick="login()">
+    </div>
+    <script type="text/javascript">
+        function login()
+        {
+            var uname=document.getElementById('username').value
+            var pass=document.getElementById('password').value
+            if (uname=="deepak" && pass=="deepak")
+            {
+                location.assign("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/Collag__5.jpeg?g.JhExRJTk4i.gr6j1lNMGIFNiNHUD9e&size=770:433");
+            }
+            else if(uname=="rahul" && pass=="rahul")
+            {
+                location.assign("https://news.cornell.edu/sites/default/files/styles/full_size/public/2021-02/0224_gandhi.jpg?itok=IfrqAvpU")
+            }
+            else if(uname=="santosh" && pass=="santosh")
+            {
+                location.assign("https://www.kidpaw.com/images/namebg/santosh.jpg")
+            }
+            else
+            {
+                window.alert("Bsdke apna first name dal ludo o bhi small letter me without space");
+            }
+        }
+
+    </script>
+</body>
+</html>
